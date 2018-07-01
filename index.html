@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3D</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cube-wrapper">
+        <div class="cube-box">
+            <div class="cube1 cube"></div>
+            <div class="cube2 cube"></div>
+            <div class="cube3 cube"></div>
+            <div class="cube4 cube"></div>
+            <div class="cube5 cube"></div>
+            <div class="cube6 cube"></div>
+        </div>
+    </div>
+    <div class="cube-wrapper">
+        <div class="cube-box">
+            <div class="cube1 cube"></div>
+            <div class="cube2 cube"></div>
+            <div class="cube3 cube"></div>
+            <div class="cube4 cube"></div>
+            <div class="cube5 cube"></div>
+            <div class="cube6 cube"></div>
+        </div>
+    </div>
+    <div class="cube-wrapper">
+        <div class="cube-box">
+            <div class="cube1 cube"></div>
+            <div class="cube2 cube"></div>
+            <div class="cube3 cube"></div>
+            <div class="cube4 cube"></div>
+            <div class="cube5 cube"></div>
+            <div class="cube6 cube"></div>
+        </div>
+    </div>
+</body>
+    <script>
+    let boxs=document.getElementsByClassName('cube-box');
+    setInterval(()=>{
+        for (let items in boxs){
+            if (boxs[items].style) boxs[items].style.height=`${Math.random()*300}px`;
+        }
+    },5000)
+    </script>
+</html>
